@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		67FE763F2696572E00666070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FE763E2696572E00666070 /* AppDelegate.swift */; };
 		67FE76412696572E00666070 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FE76402696572E00666070 /* SceneDelegate.swift */; };
-		67FE76432696572E00666070 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FE76422696572E00666070 /* ViewController.swift */; };
 		67FE76462696572E00666070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67FE76442696572E00666070 /* Main.storyboard */; };
 		67FE76492696572E00666070 /* KorDict.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67FE76472696572E00666070 /* KorDict.xcdatamodeld */; };
 		67FE764B2696573100666070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67FE764A2696573100666070 /* Assets.xcassets */; };
 		67FE764E2696573100666070 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67FE764C2696573100666070 /* LaunchScreen.storyboard */; };
 		67FE76592696573100666070 /* KorDictTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FE76582696573100666070 /* KorDictTests.swift */; };
 		67FE76642696573100666070 /* KorDictUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FE76632696573100666070 /* KorDictUITests.swift */; };
+		67FE767226965DF000666070 /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FE767126965DF000666070 /* EntriesTableViewController.swift */; };
+		67FE767426965E3900666070 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FE767326965E3800666070 /* Entry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		67FE763B2696572E00666070 /* KorDict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KorDict.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67FE763E2696572E00666070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67FE76402696572E00666070 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		67FE76422696572E00666070 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67FE76452696572E00666070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67FE76482696572E00666070 /* KorDict.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KorDict.xcdatamodel; sourceTree = "<group>"; };
 		67FE764A2696573100666070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		67FE765F2696573100666070 /* KorDictUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KorDictUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67FE76632696573100666070 /* KorDictUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KorDictUITests.swift; sourceTree = "<group>"; };
 		67FE76652696573100666070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67FE767126965DF000666070 /* EntriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewController.swift; sourceTree = "<group>"; };
+		67FE767326965E3800666070 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +105,9 @@
 			children = (
 				67FE763E2696572E00666070 /* AppDelegate.swift */,
 				67FE76402696572E00666070 /* SceneDelegate.swift */,
-				67FE76422696572E00666070 /* ViewController.swift */,
 				67FE76442696572E00666070 /* Main.storyboard */,
+				67FE767326965E3800666070 /* Entry.swift */,
+				67FE767126965DF000666070 /* EntriesTableViewController.swift */,
 				67FE764A2696573100666070 /* Assets.xcassets */,
 				67FE764C2696573100666070 /* LaunchScreen.storyboard */,
 				67FE764F2696573100666070 /* Info.plist */,
@@ -261,8 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67FE767426965E3900666070 /* Entry.swift in Sources */,
+				67FE767226965DF000666070 /* EntriesTableViewController.swift in Sources */,
 				67FE76492696572E00666070 /* KorDict.xcdatamodeld in Sources */,
-				67FE76432696572E00666070 /* ViewController.swift in Sources */,
 				67FE763F2696572E00666070 /* AppDelegate.swift in Sources */,
 				67FE76412696572E00666070 /* SceneDelegate.swift in Sources */,
 			);
