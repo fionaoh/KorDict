@@ -42,7 +42,6 @@ class EntriesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         let entry = entries[indexPath.row]
-        print(entry.term)
         
         if entry.isStarred {
             cell.textLabel?.text = "⭐️ " + entry.term
@@ -53,14 +52,15 @@ class EntriesTableViewController: UITableViewController {
         return cell
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let addVC = segue.destination as? AddEntryViewController {
+            addVC.previousVC = self
+        }
     }
-    */
+    
 
 }
