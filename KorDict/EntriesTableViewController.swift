@@ -52,6 +52,12 @@ class EntriesTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let entry = entries[indexPath.row]
+        
+        performSegue(withIdentifier: "moveToView", sender: entry)
+    }
+    
     
     // MARK: - Navigation
 
@@ -59,6 +65,13 @@ class EntriesTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let addVC = segue.destination as? AddEntryViewController {
             addVC.previousVC = self
+        }
+        
+        if let seeVC = segue.destination as? SeeEntryViewController {
+            if let entry = sender as? Entry {
+                seeVC.selectedEntry = entry
+                seeVC.previousVC = self
+            }
         }
     }
     

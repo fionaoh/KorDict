@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		673B086B269766F800366F93 /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B086A269766F800366F93 /* AddEntryViewController.swift */; };
+		67DE5F7D2698BF97007D6163 /* SeeEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE5F7C2698BF97007D6163 /* SeeEntryViewController.swift */; };
 		67FE763F2696572E00666070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FE763E2696572E00666070 /* AppDelegate.swift */; };
 		67FE76412696572E00666070 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FE76402696572E00666070 /* SceneDelegate.swift */; };
 		67FE76462696572E00666070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67FE76442696572E00666070 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		673B086A269766F800366F93 /* AddEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
+		67DE5F7C2698BF97007D6163 /* SeeEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeEntryViewController.swift; sourceTree = "<group>"; };
 		67FE763B2696572E00666070 /* KorDict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KorDict.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67FE763E2696572E00666070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67FE76402696572E00666070 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				67FE763E2696572E00666070 /* AppDelegate.swift */,
 				67FE76402696572E00666070 /* SceneDelegate.swift */,
 				67FE76442696572E00666070 /* Main.storyboard */,
+				67DE5F7C2698BF97007D6163 /* SeeEntryViewController.swift */,
 				673B086A269766F800366F93 /* AddEntryViewController.swift */,
 				67FE767326965E3800666070 /* Entry.swift */,
 				67FE767126965DF000666070 /* EntriesTableViewController.swift */,
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67DE5F7D2698BF97007D6163 /* SeeEntryViewController.swift in Sources */,
 				67FE767426965E3900666070 /* Entry.swift in Sources */,
 				67FE767226965DF000666070 /* EntriesTableViewController.swift in Sources */,
 				67FE76492696572E00666070 /* KorDict.xcdatamodeld in Sources */,
